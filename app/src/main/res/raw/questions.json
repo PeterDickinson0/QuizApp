@@ -1,26 +1,26 @@
 [
-  { "question": "Do you look up to upperclassmen?", "choices": ["yes", "no"], "values": [15, 0] },
+  { "question": "Do you look up to upperclassmen?", "choices": ["yes", "no"], "values": [15, -15] },
 
-  { "question": "What is your favorite video game?", "choices": ["Overwatch","Fortnite","Valorant","I don't play video games"], "values": [10, 0, 15, -5] },
+  { "question": "What is your favorite video game?", "choices": ["Overwatch","Fortnite","Valorant","I don't play video games"], "values": [5, 0, 5, -5] },
 
-  { "question": "Do you watch anime?", "choices": ["Yes", "No"], "values": [10, -5] },
+  { "question": "Do you watch anime?", "choices": ["Yes", "No"], "values": [5, -5] },
 
-  { "question": "Do you roll your Ds and Ts?", "choices": ["Yes I dddddo", "No I don’t"], "values": [20, -15] },
+  { "question": "Do you roll your Ds and Ts?", "choices": ["Yes I dddddo", "No I don’t"], "values": [10, -10] },
 
-  { "question": "Are you a fan of Keith Haring?", "choices": ["Yes", "No"], "values": [15, 0] },
+  { "question": "Are you a fan of Keith Haring?", "choices": ["Yes", "No"], "values": [5, -5] },
 
-  { "question": "What is your favorite subject in school?", "choices": ["Math", "Biology", "Chemistry", "English"], "values": [10, -10, 5, -5] },
+  { "question": "What is your favorite subject in school?", "choices": ["Math", "Biology", "Chemistry", "English"], "values": [10, -10, 5, -10] },
 
-  { "question": "What is the coolest track event?", "choices": ["Pole Vault", "300 Meter Hurdles", "200 Meter", "800 Meter"], "values": [20, 5, 0, -10] },
+  { "question": "What is the coolest track event?", "choices": ["Pole Vault", "300 Meter Hurdles", "200 Meter", "800 Meter"], "values": [10, 5, 0, -10] },
 
-  { "question": "Do you enjoy playing games on your phone?", "choices": ["Yes", "No"], "values": [25, -10] },
+  { "question": "Do you enjoy playing games on your phone?", "choices": ["Yes", "No"], "values": [10, -10] },
 
   { "question": "What is your favorite app?", "choices": ["Snapchat", "Tik Tok", "Instagram", "Messenger"], "values": [0, 15, 5, -10] },
 
-  { "question": "What is your favorite food?", "choices": ["Spicy Pork", "Honey nut cheerios", "Soup", "Doughnuts"], "values": [10, 20, 5, 0] },
+  { "question": "What is your favorite food?", "choices": ["Spicy Pork", "Honey nut cheerios", "Soup", "Doughnuts"], "values": [10, 10, 5, 0] },
 
-  { "question": "What’s your favorite band?", "choices": ["Coldplay", "Chainsmokers", "Imagine Dragons", "Beetles"], "values": [5, 15, 25, -10] },
+  { "question": "What’s your favorite band?", "choices": ["Coldplay", "Chainsmokers", "Imagine Dragons", "Beetles"], "values": [5, 0, 5, -10] },
 
-  { "question": "Do you scuba dive?", "choices": ["Yes", "No"], "values": [15, -5] }
+  { "question": "Do you scuba dive?", "choices": ["Yes", "No"], "values": [10, -5] }
 
 ]

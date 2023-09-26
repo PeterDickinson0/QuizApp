@@ -1,0 +1,26 @@
+[
+  { "question": "¿Admira usted a los estudiantes del último año?", "choices": ["Sí", "No"], "values": [15, 0] },
+
+  { "question": "¿Cuál es su videojuego favorito?", "choices": ["Overwatch","Fortnite","Valorant","Yo no juego a los videojuegos"], "values": [10, 0, 15, -5] },
+
+  { "question": "¿Mira usted el Anime?", "choices": ["Sí", "No"], "values": [10, -5] },
+
+  { "question": "¿Enrolla usted sus Ds y Ts?", "choices": ["Sí", "No"], "values": [20, -15] },
+
+  { "question": "¿Es usted un fanatico de Keith Haring?", "choices": ["Sí", "No"], "values": [15, 0] },
+
+  { "question": "¿Cuál es su clase favorita?", "choices": ["Matematicas", "Biologia", "Quimica", "Ingles"], "values": [10, -10, 5, -5] },
+
+  { "question": "¿Qué prueba en pista le parece genial?", "choices": ["Salto de pertiga", "Tres ciento metros vallas", "Dos ceinto metros", "Ocho ceinto metros"], "values": [20, 5, 0, -10] },
+
+  { "question": "¿A usted le gusta jugar a los videojuegos en su teléfono?", "choices": ["Sí", "No"], "values": [25, -10] },
+
+  { "question": "¿Cuál es su aplicación favorita en el teléfono?", "choices": ["Snapchat", "Tik Tok", "Instagram", "Messenger"], "values": [0, 15, 5, -10] },
+
+  { "question": "¿Cuál es su comida favorita?", "choices": ["Jamon picante", "Cheerios de miel and nueces", "Sopa", "Donas dulces"], "values": [10, 20, 5, 0] },
+
+  { "question": "¿Cuál es su banda favorita?", "choices": ["Coldplay", "Chainsmokers", "Imagine Dragons", "Beetles"], "values": [5, 15, 25, -10] },
+
+  { "question": "¿Usted bucea con frecuencia?", "choices": ["Sí", "No"], "values": [15, -5] }
+
+]

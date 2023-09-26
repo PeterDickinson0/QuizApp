@@ -1,6 +1,7 @@
 package com.example.quizapp
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -10,6 +11,7 @@ import androidx.constraintlayout.widget.Group
 import androidx.core.view.marginTop
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import java.io.InputStream
 import kotlin.math.log
 
 class MainActivity : AppCompatActivity()
@@ -29,20 +31,55 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val inputStream = resources.openRawResource(R.raw.questions)
+        val isEnglish: Boolean = false
+
+        val inputStream: InputStream = if (isEnglish)
+        { resources.openRawResource(R.raw.questions) }
+        else
+        { resources.openRawResource(R.raw.questions_spanish) }
+
         val jsonString = inputStream.bufferedReader().use {
             it.readText()
         }
 
         val gson = Gson()
-        val sType = object : TypeToken<List<Question>>() { }.type
+        val sType = object : TypeToken<List<Question>>() {}.type
         val questionList = gson.fromJson<List<Question>>(jsonString, sType)
 
         logicHandler = Quiz(questionList)
 
         wireWidgets()
 
-        update()
+        begin()
+
+    }
+
+    private fun begin()
+    {
+        Log.d("TAG", "begin: HI")
+        button1.visibility = View.GONE
+        button2.visibility = View.GONE
+        button3.visibility = View.GONE
+        button4.visibility = View.GONE
+
+        questionDisplay.text = "Welcome to the leonard quiz!"
+
+        var timer = object: CountDownTimer(10000,1) {
+            override fun onTick(p0: Long) {}
+
+            override fun onFinish() {
+                button1.visibility = View.VISIBLE
+                button2.visibility = View.VISIBLE
+                button3.visibility = View.VISIBLE
+                button4.visibility = View.VISIBLE
+                update()
+            }
+
+        }.start()
+
+        //SystemClock.sleep(1000)
+
+
     }
 
     private fun wireWidgets()

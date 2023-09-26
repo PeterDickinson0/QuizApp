@@ -25,8 +25,6 @@ class Quiz (data: List<Question>)
 
     fun getCurrentChoices(): List<String>
     {
-        val wtf = questions[questionIndex]
-        Log.d("HERE", "getCurrentChoices: $wtf")
         return questions[questionIndex].choices
     }
 

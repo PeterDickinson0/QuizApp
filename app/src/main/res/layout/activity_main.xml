@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BBBECC"
+    android:backgroundTint="#BCBEC8"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/TextView_Main_ShowQuestion"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:text="TextView"
+        android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,47 +34,69 @@
 
     <Button
         android:id="@+id/Button_Main_Choice4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#9E50B3"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Button_Main_Choice3"
-        app:layout_constraintTop_toBottomOf="@+id/Button_Main_Choice2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#684280"
+        app:strokeWidth="4dp" />
 
     <Button
         android:id="@+id/Button_Main_Choice3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Button_Main_Choice4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button_Main_Choice1" />
-
-    <Button
-        android:id="@+id/Button_Main_Choice2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="300dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4985AC"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/Button_Main_Choice4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Button_Main_Choice1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Main_Choice2"
+        app:strokeColor="#326368"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/Button_Main_Choice2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C14E4E"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Main_Choice3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Main_Choice1"
+        app:strokeColor="#753333"
+        app:strokeWidth="4dp" />
 
     <Button
         android:id="@+id/Button_Main_Choice1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
+        android:backgroundTint="#72BA52"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/Button_Main_Choice3"
-        app:layout_constraintEnd_toStartOf="@+id/Button_Main_Choice2"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Main_Choice2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#457331"
+        app:strokeWidth="4dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
